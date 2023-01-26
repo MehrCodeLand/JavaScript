@@ -5,3 +5,9 @@ todos.forEach(function (taskTitle) {
     element.innerText = taskTitle ; 
     document.body.appendChild(element);
 });
+
+function add(){
+    let textbox = document.getElementById('todo-title');
+    let title = textbox.value ;
+    todos.push(title);
+}
